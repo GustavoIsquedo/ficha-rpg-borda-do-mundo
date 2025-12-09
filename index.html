@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Borda do Mundo - O Escolhido</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header class="rpg-header">
+            <h1>A Borda do Mundo</h1>
+            <p class="subtitle">O Limiar aguarda a Vontade dos deuses</p>
+        </header>
+
+        <section class="lore-box">
+            <h2>O Chamado da Deusa</h2>
+            <p>
+                A <strong>Vila do Limiar</strong> vive sob a vigilância da <strong>Deusa de Pedra</strong>, uma antiga estátua venerada que escolhe, em intervalos incertos, um novo "Eleito". Ir além das muralhas, para o <strong>Grande Desconhecido</strong>, 
+                é o <strong>maior prêmio</strong>: a jornada para o Paraíso prometido.
+            </p>
+            <p>
+                A Vila celebra cada partida. Todos acreditam que os escolhidos estão cumprindo a Vontade da <strong>Deusa</strong> e
+                jamais precisam retornar. <strong>Prepare-se</strong>. A Deusa está vibrando.
+            </p>
+        </section>
+        
+        <section class="system-summary">
+            <h3>Sistema D20: Atributos & Perícias</h3>
+            <div class="d20-info">
+                <div class="attributes-list">
+                    <h4>Atributos Básicos (d20)</h4>
+                    <ul class="spaced-list">
+                        <li><strong>FOR</strong> (Força): Poder físico bruto.</li>
+                        <li><strong>DES</strong> (Destreza): Agilidade, reflexos e precisão.</li>
+                        <li><strong>CON</strong> (Constituição): Vitalidade e resistência física.</li>
+                        <li><strong>INT</strong> (Inteligência): Conhecimento, raciocínio e tecnologia.</li>
+                        <li><strong>SAB</strong> (Sabedoria): Percepção, intuição e fé.</li>
+                        <li><strong>CAR</strong> (Carisma): Liderança, persuasão e força de vontade.</li>
+                    </ul>
+                    <div class="defenses-info">
+                        <h5>Mecânicas de Defesa</h5>
+                        <ul class="spaced-list sub-spaced-list">
+                            <li><strong>ESQUIVAR</strong>: Bônus de <strong>+2 por ponto de DES</strong>. Bônus de <strong>+3</strong> se escolher a perícia <strong>Velocidade</strong>.</li>
+                            <li><strong>DEFENDER</strong>: Bônus de <strong>+2 por ponto de CON</strong>. Bônus de <strong>+3</strong> se escolher a perícia <strong>Resiliência</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-list">
+                    <h4>Perícias Chave</h4>
+                    <ul class="spaced-list one-skill-per-line">
+                        <li><strong>Sobrevivência</strong> (SAB)</li>
+                        <li><strong>Percepção</strong> (SAB)</li>
+                        <li><strong>Furtividade</strong> (DES)</li>
+                        <li><strong>Pontaria</strong> (DES)</li>
+                        <li><strong>Combate C.A.C.</strong> (FOR)</li>
+                        <li><strong>Resiliência</strong> (CON)</li>
+                        <li><strong>Saúde/Socorros</strong> (SAB)</li>
+                        <li><strong>Reparos</strong> (INT)</li>
+                        <li><strong>Adestramento</strong> (CAR)</li>
+                        <li><strong>Intimidação</strong> (CAR)</li>
+                        <li><strong>Investigação</strong> (INT)</li>
+                        <li><strong>Fé (Desconhecido)</strong> (SAB)
+                        <li><strong>Velocidade</strong> (DES)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <main class="character-creator">
+            <div class="guide-tooltip class-guide">
+                <h3>Classes, Vida e Foco</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Classe</th>
+                            <th>Vida Máxima (Base)</th>
+                            <th>Foco de Atributo (+2)</th>
+                            <th>Bônus em Perícias</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Peregrino</strong></td>
+                            <td>7 PV</td>
+                            <td>SAB, CAR</td>
+                            <td>Fé (Desconhecido), Sobrevivência (Fixos); +2 Escolhas (Exceto Sobrev. e Resil.)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Erudito</strong></td>
+                            <td>6 PV</td>
+                            <td>INT, DES</td>
+                            <td>Reparos, Investigação (Fixos); +3 Escolhas (Exceto Fé (Desconhecido) e Resil.)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Protetor</strong></td>
+                            <td>10 PV</td>
+                            <td>FOR, CON</td>
+                            <td>Combate C.A.C., Resiliência (Fixos); +2 Escolhas (Exceto Fé (Desconhecido) e Reparos)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <form class="char-form">
+                <div class="input-group">
+                    <label for="char-name">Nome do Crente e Título</label>
+                    <input type="text" id="char-name" placeholder="Ex: Ronan, o Zeloso" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="char-class">Função na Comunidade</label>
+                    <select id="char-class">
+                        <option value="peregrino">Peregrino</option>
+                        <option value="erudito">Erudito</option>
+                        <option value="protetor">Protetor</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="char-motivation">Qual sua maior aspiração no Paraíso?</label>
+                    <textarea id="char-motivation" rows="2" placeholder="Ex: Encontrar a verdade, servir os Deuses, alcançar a paz eterna."></textarea>
+                </div>
+                
+                <section class="stat-allocation">
+                    <h3>Distribuição da Vontade</h3>
+                    <p class="points-available">
+                        Você tem <strong>5</strong> Pontos de Atributo para distribuir e
+                        <strong>escolhas limitadas de Perícias</strong> para bônus de +5.
+                    </p>
+                    
+                    <div class="attribute-allocator">
+                        <h4>Atributos (Total: 5 Pontos)</h4>
+                        <div class="attribute-row"><label>FOR (Limite 4)</label><input type="number" name="for" value="1" min="1" max="4"></div>
+                        <div class="attribute-row"><label>DES (Limite 4)</label><input type="number" name="des" value="1" min="1" max="4"></div>
+                        <div class="attribute-row"><label>CON (Limite 4)</label><input type="number" name="con" value="1" min="1" max="4"></div>
+                        <div class="attribute-row"><label>INT (Limite 4)</label><input type="number" name="int" value="1" min="1" max="4"></div>
+                        <div class="attribute-row"><label>SAB (Limite 4)</label><input type="number" name="sab" value="1" min="1" max="4"></div>
+                        <div class="attribute-row"><label>CAR (Limite 4)</label><input type="number" name="car" value="1" min="1" max="4"></div>
+                    </div>
+
+                    <div class="skill-allocator">
+                        <h4>Perícias Bônus (Suas Escolhas Adicionais de +5)</h4>
+                        <div class="skill-checkbox-group">
+                            <label><input type="checkbox" name="skill" value="Sobrevivência"> Sobrevivência</label>
+                            <label><input type="checkbox" name="skill" value="Percepção"> Percepção</label>
+                            <label><input type="checkbox" name="skill" value="Furtividade"> Furtividade</label>
+                            <label><input type="checkbox" name="skill" value="Pontaria"> Pontaria</label>
+                            <label><input type="checkbox" name="skill" value="Combate C.A.C."> Combate C.A.C.</label>
+                            <label><input type="checkbox" name="skill" value="Resiliência"> Resiliência</label>
+                            <label><input type="checkbox" name="Saúde/Socorros" value="Saúde/Socorros"> Saúde/Socorros</label>
+                            <label><input type="checkbox" name="skill" value="Reparos"> Reparos</label>
+                            <label><input type="checkbox" name="skill" value="Adestramento"> Adestramento</label>
+                            <label><input type="checkbox" name="skill" value="Intimidação"> Intimidação</label>
+                            <label><input type="checkbox" name="skill" value="Investigação"> Investigação</label>
+                            <label><input type="checkbox" name="skill" value="Fé (Desconhecido)"> Fé (Desconhecido)</label>
+                            <label><input type="checkbox" name="skill" value="Velocidade"> Velocidade</label>
+                        </div>
+                    </div>
+                </section>
+
+                <button type="submit" class="btn-create">Submeter-se à Deusa</button>
+            </form>
+        </main>
+    </div>
+    
+    <aside id="created-sheets-list">
+        <h2>📜 Devotos</h2>
+        <ul id="sheets-ul">
+            <li>Carregando...</li>
+        </ul>
+    </aside>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+
+    <script>
+        // ==========================================================
+        // !! SUBSTITUA PELA SUA CONFIGURAÇÃO REAL DO FIREBASE !!
+        // ==========================================================
+        const firebaseConfig = {
+            apiKey: "SUA_API_KEY", 
+            authDomain: "SEU_PROJETO.firebaseapp.com",
+            projectId: "SEU-PROJECT-ID",
+            storageBucket: "SEU_PROJETO.appspot.com",
+            messagingSenderId: "SEU_SENDER_ID",
+            appId: "SEU_APP_ID"
+        };
+        // ==========================================================
+        
+        // Inicializar o Firebase e o Firestore
+        const app = firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
